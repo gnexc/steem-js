@@ -132,11 +132,11 @@ Types.asset = {
           {
             case "@@000000021":
               precision = 3
-              symbol = Config.get( "address_prefix" ) == "STM" ? "STEEM" : "TESTS"
+              symbol = Config.get( "address_prefix" ) == "GNX" ? "GNEX" : "TESTS"
               break
             case "@@000000013":
               precision = 3
-              symbol = Config.get( "address_prefix" ) == "STM" ? "SBD" : "TBD"
+              symbol = Config.get( "address_prefix" ) == "GNX" ? "GBD" : "TBD"
               break
             case "@@000000037":
               precision = 6
@@ -193,7 +193,7 @@ Types.asset = {
         return object
     },
     toObject(object, debug = {}){
-        if (debug.use_default && object === undefined) { return "0.000 STEEM"; }
+        if (debug.use_default && object === undefined) { return "0.000 GNEX"; }
         return object
     }
 }
@@ -219,9 +219,9 @@ Types.asset_symbol = {
             // Legacy Case
             let b_copy = b.copy(b.offset, b.offset + 7)
             let symbol = new Buffer(b_copy.toBinary(), "binary").toString().replace(/\x00/g, "")
-            if(symbol == "STEEM" || symbol == "TESTS")
+            if(symbol == "GNEX" || symbol == "TESTS")
               nai_string = "@@000000021"
-            else if(symbol == "SBD" || symbol == "TBD")
+            else if(symbol == "GBD" || symbol == "TBD")
               nai_string = "@@000000013"
             else if(symbol == "VESTS")
               nai_string = "@@000000037"
@@ -249,11 +249,11 @@ Types.asset_symbol = {
         {
           case "@@000000021":
             precision = 3
-              symbol = Config.get( "address_prefix" ) == "STM" ? "STEEM" : "TESTS"
+              symbol = Config.get( "address_prefix" ) == "GNX" ? "GNEX" : "TESTS"
             break
           case "@@000000013":
             precision = 3
-            symbol = Config.get( "address_prefix" ) == "STM" ? "SBD" : "TBD"
+            symbol = Config.get( "address_prefix" ) == "GNX" ? "GBD" : "TBD"
             break
           case "@@000000037":
             precision = 6
@@ -281,7 +281,7 @@ Types.asset_symbol = {
         return object
     },
     toObject(object, debug = {}){
-        if (debug.use_default && object === undefined) { return "STEEM"; }
+        if (debug.use_default && object === undefined) { return "GNEX"; }
         return object
     }
 }
