@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steemit/steem-js.git"
+    "url": "git+https://github.com/gnexc/steem-js.git"
   },
   "keywords": [
     "steem",
@@ -28,9 +28,9 @@
   "author": "Fabien (https://github.com/bonustrack)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/steemit/steem-js/issues"
+    "url": "https://github.com/gnexc/steem-js/issues"
   },
-  "homepage": "https://github.com/steemit/steem-js#readme",
+  "homepage": "https://github.com/gnexc/steem-js.git#readme",
   "dependencies": {
     "@steemit/rpc-auth": "^1.1.1",
     "bigi": "^1.4.2",
