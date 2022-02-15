@@ -1,10 +1,10 @@
 {
   "transport": "http",
-  "websocket": "wss://gtg.steem.house:8090",
-  "uri": "https://api.steemit.com",
+  "websocket": "wss://gnexportal.com:9876",
+  "uri": "http://gnexportal.com:9876",
   "url": "",
-  "dev_uri": "https://api.steemitdev.com",
-  "stage_uri": "https://api.steemitstage.com",
-  "address_prefix": "STM",
-  "chain_id": "0000000000000000000000000000000000000000000000000000000000000000"
+  "dev_uri": "http://gnexportal.com:9876",
+  "stage_uri": "http://gnexportal.com:9876",
+  "address_prefix": "GNX",
+  "chain_id": "b3f32f410037a129b990f29230698048fe895e23e7dc297fd6f6e9d167a62571"
 }
